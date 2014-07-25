@@ -1,11 +1,13 @@
 <div class="container">
-	<h3>User Administration</h3>
+<br>
+<div class="jumbotron">
+	<h3>Administration</h3>
 	<table class='table'>
 		<tr>
 			<th></th>
 			<th>ID</th>
 			<th>Name</th>
-			<th>Title</th>
+			<th>Surname</th>
 			<th>Email</th>
 			<th></th>
 			<th></th>
@@ -22,7 +24,7 @@
 			<% } %>
 			<td><%= user.id %></td>
 			<td><%= user.name %></td>
-			<td><%= user.title %></td>
+			<td><%= user.surname %></td>
 			<td><%= user.email %></td>
 			<% if (user.admin) { %>
 				<td> <img src="/images/admin.png"></td>
@@ -41,4 +43,5 @@
 
 		<% }) %>
 	</table>
+	</div>
 </div>

@@ -1,5 +1,5 @@
 /**
- * MainController
+ * PreviewController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -16,11 +16,9 @@
  */
 
 module.exports = {
-
-	'new': function(req, res) {
-		res.view('main/new');
+    
+  'new': function(req, res) {
+		res.view('preview/new');
 	}
-    
-    
   
 };

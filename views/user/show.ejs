@@ -1,16 +1,76 @@
-<div class='container'>
-	<h1><%= user.name%>  <%= user.title %> </h1>
+<div class="container">
 	
-	<% if (user.admin) { %>
-		<img src="/images/admin.png">admin
-	<% } else { %>
-			<img src="/images/pawn.png">pawn
-	<% } %>		
-	
-	<hr>
+<div class="container-fluid">
+  <div class="row">
+  	<div class="col-md-12">
+       <h3>User Profile </h3>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 col-xs-10">
+      <div class="panel panel-default">
+            <div class="panel-body">
+			  <div class="row">
+			  <div class="col-xs-12 col-sm-4 text-center">
+					<img src="/images/haris.jpg" alt="" class="center-block img-circle img-responsive">
+					<ul class="list-inline ratings text-center" title="Ratings">
+					  <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+					  <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+					  <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+					  <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+					  <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+					</ul>
+				</div><!--/col--> 
+				<div class="col-xs-12 col-sm-8">
+					<h1><%= user.name%>  <%= user.surname %> </h1>
+
+						<% if (user.admin) { %>
+					<img src="/images/admin.png">admin
+					<% } else { %>
+					<img src="/images/pawn.png">pawn
+					<% } %>		
+
+					<br>
+
+
+					<p><strong>About: </strong> Web Designer / UI </p>
+					<p><strong>Hobbies: </strong> Hanging out with friends, listen to music, reading and learning new things. </p>
+					<p><strong>Skills: </strong>
+						<span class="label label-info tags">html5</span> 
+						<span class="label label-info tags">css3</span>
+						<span class="label label-info tags">jquery</span>
+						<span class="label label-info tags">bootstrap3</span>
+					</p>
+				</div><!--/col-->          
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
 	
 	<h3>Contact: <%= user.email %> </h3>
 	
 	<a class="btn btn-medium btn-primary" href="/user/edit/<%= user.id %>">Edit</a>
-	
+
+
+			  </div><!--/row-->
+              </div><!--/panel-body-->
+          </div><!--/panel-->
+    </div><!--/col--> 
+  </div><!--/row--> 
+</div><!--/container--> 
+
+
+
+
+
+
 </div>

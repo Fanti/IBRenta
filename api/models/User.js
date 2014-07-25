@@ -17,7 +17,7 @@ module.exports = {
   		required: true
   	},
 
-  	title: {
+  	surname: {
   		type: 'string'
   	},
 

@@ -1,5 +1,5 @@
 /**
- * MainController
+ * IndexController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -16,11 +16,11 @@
  */
 
 module.exports = {
-
-	'new': function(req, res) {
+    
+  
+'new': function(req, res) {
 		res.view('main/new');
 	}
-    
-    
+
   
 };

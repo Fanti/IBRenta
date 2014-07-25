@@ -16,7 +16,7 @@ module.exports = {
 
     var userObj = {
       name: req.param('name'),
-      title: req.param('title'),
+      surname: req.param('surname'),
       email: req.param('email'),
       password: req.param('password'),
       confirmation: req.param('confirmation')
@@ -106,14 +106,14 @@ module.exports = {
     if (req.session.User.admin) {
       var userObj = {
         name: req.param('name'),
-        title: req.param('title'),
+        surname: req.param('surname'),
         email: req.param('email'),
         admin: req.param('admin')
       }
     } else {
       var userObj = {
         name: req.param('name'),
-        title: req.param('title'),
+        surname: req.param('surname'),
         email: req.param('email')
       }
     }

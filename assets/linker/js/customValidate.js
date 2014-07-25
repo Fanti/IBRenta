@@ -10,6 +10,9 @@ $(document).ready(function(){
 	      name: {
 	        required: true
 	      },
+	      surname:{
+	      	required:true
+	      },
 	      email: {
 	        required: true,
 	        email: true

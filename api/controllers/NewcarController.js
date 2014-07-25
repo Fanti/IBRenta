@@ -1,5 +1,5 @@
 /**
- * MainController
+ * NewcarController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -16,11 +16,10 @@
  */
 
 module.exports = {
-
-	'new': function(req, res) {
-		res.view('main/new');
+    
+  'addcar': function(req, res) {
+		res.view('/newcar/addcar');
 	}
-    
-    
+
   
 };
